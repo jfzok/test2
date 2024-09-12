@@ -20,7 +20,8 @@ body{
 
 .my-nav-scroll{
   margin: 15px 40px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
+  /* background: linear-gradient(45deg,rgba(255,78,69,0.8),rgba(255,84,69,0.6)); */
   border-radius: 100px;
   transition: .3s;
 }
@@ -54,7 +55,6 @@ body{
   background: #ff4e45;
   transform: scale(1.2);
 }
-
 
 .navbar-brand{
   margin-right: 10%;
@@ -293,6 +293,7 @@ body{
 
 .box3{
   background: url(../images/資產\ 10.png) center center;
+  background-attachment: fixed;
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -300,6 +301,7 @@ body{
 
 .box3-2{
   background: url(../images/資產\ 18.png) center center;
+  background-attachment: fixed;
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -703,6 +705,7 @@ td>a:hover{
 
 .box8{
   background: url(../images/box8.png) center center;
+  background-attachment: fixed;
   background-size: cover;
   width: 100%; 
   height: auto; 
@@ -807,7 +810,7 @@ hr{
 /* end */
 
 .login{
-  background: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(45deg,rgba(0,255,255,0.6),rgba(46,49,146,0.4));
   width: 100%;
   height: 100%;
   display: none;
@@ -815,9 +818,10 @@ hr{
   padding-left: 17px;
 } 
 
-.login-box{
+.modal-content{
   background: #fff;
-  padding: 30px 100px;
+  padding: 40px 100px;
+  border-radius: 10px;
 }
 
 .login-box>h2{
@@ -828,15 +832,28 @@ hr{
   outline: none;
   border: none;
   padding: 10px 10px;
+  width: 100%;
 }
 
 .login-box>form>label{
   margin-top: 20px;
 }
 
-.login-box>form>button{
-  border: none;
-  padding: 5px 10px;
-  margin-top: 20px;
-  margin-left: 40px;
+.buts>button{
+  border: 1px solid #00c8dd;
+  padding: 5px 20px;
+  border-radius: 100px;
+}
+
+.buts>button:hover{
+  background: #00c8dd;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.buts{
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
 }
