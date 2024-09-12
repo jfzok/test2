@@ -282,10 +282,21 @@ body{
   color: #fff;
 }
 
+.box2-img{
+  position: absolute; 
+  top: -90px; 
+  left: -80px; 
+  z-index: -1;
+}
+
 @media (max-width: 1084px) {
   .box2-1{
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  .box2-img{
+    display: none;
   }
 }
 
