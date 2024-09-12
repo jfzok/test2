@@ -80,6 +80,44 @@ $(document).ready(function () {
         interval: 3000 // 設定輪播時間間隔，單位是毫秒
     });
 
+    let artadd1 = 0;
+    let voted = false;
+
+    $("#art1").click(function () {
+        if(!voted) {
+            artadd1++;
+            $("#art-vote1").text(artadd1);
+            voted = true;
+            $(this).siblings().prop("disabled" , true);
+            $(".voted").text("已投票");
+        }
+    });
+
+    let artadd2 = 0;
+
+    $("#art2").click(function () {
+        if(!voted) {
+            artadd2++;
+            $("#art-vote2").text(artadd2);
+            voted = true;
+            $(this).siblings().prop("disabled" , true);
+            $(".voted").text("已投票");
+        }
+    });
+    
+    let artadd3 = 0;
+
+    $("#art3").click(function () {
+        if(!voted) {
+            artadd3++;
+            $("#art-vote3").text(artadd3);
+            voted = true;
+            $(this).siblings().prop("disabled" , true);
+            $(".voted").text("已投票")
+        }
+
+    });
+
 });
 
 // $(".w1").click(function (e) { 
