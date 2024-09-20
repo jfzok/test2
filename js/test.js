@@ -125,6 +125,6 @@ $(document).ready(function () {
 
       $('#phone').click(function(){
         // 使用 window.open 打開新窗口，並設置窗口大小和位置
-        window.open('http://localhost:8081/index2.html#', 'newwindow', 'width=520,height=900,top=100,left=100');
+        window.open('https://jfzok.github.io/test2/', 'newwindow', 'width=520,height=900,top=100,left=100');
     });
 });
