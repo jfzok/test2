@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <div class="open">
+  <!-- <div class="open">
     <div class="open-box">
       <i class="fa-brands fa-artstation open-box-i"></i>
       <h2 class="open-box-h2">藝起<span style="color: #00dbff;">浪人祭</h2>
@@ -18,7 +18,7 @@
         歡迎來到<span style="color: #8683ff;">東花</span>浪人祭
       </p>
     </div>
-  </div>
+  </div> -->
 
   
   <div class="login modal fade" id="mymodal">
@@ -31,7 +31,7 @@
             <input type="email" placeholder="請輸入帳號" class="login-input" id="username"><br>
             <input type="password" placeholder="請輸入密碼" class="login-input" id="password"><br>
             <h6 style="opacity: .5;">密碼提示：123</h6>
-            <button type="submit" class="login-but" id="login-btn">登入</button>
+            <button type="submit" class="login-but" id="login-btn" onclick="login()">登入</button>
           </div>
         </div>
 
@@ -40,7 +40,7 @@
             <h2 class="login-h2"><span style="color: #8683ff;">東花</span>浪人祭</h2>
             <h6 class="login-h6">會員登入</h6>
             <h2 class="login-h2">已登入</h2>
-            <button type="submit" class="login-but" id="logout-btn">登出</button>
+            <button type="submit" class="login-but" id="logout-btn" onclick="logout()">登出</button>
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@
               <p class="title-p">
                 透過<span style="color: #ff4e45;">國際浪人交流計畫</span>將學校的教育理念與台灣文化瑰寶融入國際交流的大舞台中。期望藉由學生的國際交流，將學校凝聚的<span style="color: #ff4e45;">智慧</span>和<span style="color: #ff4e45;">藝術</span>光輝發揚光大。
               </p>
-              <a href="about" class="title-a">進入網站<i class="fa-solid fa-circle-down ml-2"></i></a>
+              <a href="#about" class="title-a">進入網站<i class="fa-solid fa-circle-down ml-2"></i></a>
             </div>
           </div>
 
@@ -246,139 +246,389 @@
       </div>
 
 <!-- end -->
-
-<div class="info-title" id="info">
-  <div class="info-title-in">
-    <h6 class="info-title-h6">Info</h6>
-    <h2 class="info-title-h2"><span style="color: #35C6F9;">活動</span>資訊</h2>
-  </div>
-</div>
-
-    <div class="blue-area">
-
-<!-- end -->
-
-
-
-<!-- end -->
-      
-      <div class="box8-title" id="art">
-        <div class="box8-title-in">
-          <h6 class="box8-title-h6">calendar</h6>
-          <h2 class="box8-title-h2">活動日歷</h2>
+    <div id="info">
+      <div class="info-title">
+        <div class="info-title-in">
+          <h6 class="info-title-h6">Info</h6>
+          <h2 class="info-title-h2"><span style="color: #35C6F9;">活動</span>資訊</h2>
         </div>
       </div>
 
-      <div class="box7">
-        <div class="box7-boxs row-1">
-          <div class="box7-box-a">
-            <table class="box7-box-table">
-              <tr class="box7-box-tr">
-                <td><h6>日</h6></td>
-                <td><h6>一</h6></td>
-                <td><h6>二</h6></td>
-                <td><h6>三</h6></td>
-                <td><h6>四</h6></td>
-                <td><h6>五</h6></td>
-                <td><h6>六</h6></td>
+      <div style="background: #5cc5ff; padding: 100px 0;">
+        <div class="box7-title">
+          <div class="box7-title-in">
+            <h6 class="box7-title-h6">calendar</h6>
+            <h2 class="box7-title-h2">活動日歷</h2>
+          </div>
+        </div>
+
+
+        <div class="box7">
+          <div class="box7-boxs">
+            <table>
+              <tr class="dno">
+                <td class="box7-day"><h6>Mon</h6></td>
+                <td class="box7-day"><h6>Tus</h6></td>
+                <td class="box7-day"><h6>Wed</h6></td>
+                <td class="box7-day"><h6>Thu</h6></td>
+                <td class="box7-day"><h6>Fri</h6></td>
+                <td class="box7-day"><h6>Sat</h6></td>
+                <td class="box7-day"><h6>Sun</h6></td>
               </tr>
-              <tr class="box7-box-tr">
-                <td><h6></h6></td>
-                <td><h6></h6></td>
-                <td><h6><a href="#" class="a3-1">1</a></h6></td>
-                <td><h6>2</h6></td>
-                <td><h6>3</h6></td>
-                <td><h6>4</h6></td>
-                <td><h6>5</h6></td>
+              <tr class="dno">
+                <td>
+                  <div class="box7-cale none">
+                    <hr style="border: 1px solid #000;">
+                    <h2>30</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td>
+                  <div class="box7-cale none">
+                    <hr style="border: 1px solid #000;">
+                    <h2>31</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="bg">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>01</h2>
+                    <div class="date">
+                      <h6>開幕典禮</h6>
+                      <h6><i class="fa-solid fa-clock mr-2"></i>18:00 - 20:00</h6>
+                      <p>歡迎詞和<br>浪人季活動介紹。</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>02</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>03</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>04</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>05</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
               </tr>
-              <tr class="box7-box-tr">
-                <td><h6>6</h6></td>
-                <td><h6>7</h6></td>
-                <td><h6>8</h6></td>
-                <td><h6>9</h6></td>
-                <td><h6>10</h6></td>
-                <td><h6>11</h6></td>
-                <td><h6><a href="#" class="a3-12">12</a></h6></td>
+
+              <tr class="dno">
+                <td class="bg">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>06</h2>
+                    <div class="date">
+                      <h6>國際美食展</h6>
+                      <h6><i class="fa-solid fa-clock mr-2"></i>14:00 - 21:00</h6>
+                      <p>提供各國特色美食品嚐。</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>07</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>08</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>09</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="bg">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>10</h2>
+                    <div class="date">
+                      <h6>跨學校合作日</h6>
+                      <h6><i class="fa-solid fa-clock mr-2"></i>整天</h6>
+                      <p>與其他學校進行合作，共同探討教學方法和課程設計。</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>11</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>12</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
               </tr>
-              <tr class="box7-box-tr">
-                <td><h6>13</h6></td>
-                <td><h6>14</h6></td>
-                <td><h6>15</h6></td>
-                <td><h6><a href="#" class="a3-16">16</a></h6></td>
-                <td><h6>17</h6></td>
-                <td><h6>18</h6></td>
-                <td><h6>19</h6></td>
+
+              <tr class="dno">
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>13</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>14</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>15</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>16</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>17</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>18</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>19</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
               </tr>
-              <tr class="box7-box-tr">
-                <td><h6>20</h6></td>
-                <td><h6>21</h6></td>
-                <td><h6>22</h6></td>
-                <td><h6>23</h6></td>
-                <td><h6>24</h6></td>
-                <td><h6>25</h6></td>
-                <td><h6>26</h6></td>
+
+              <tr class="dno">
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>20</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>21</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>22</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>23</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>24</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>25</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>26</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
               </tr>
-              <tr class="box7-box-tr">
-                <td><h6>27</h6></td>
-                <td><h6>28</h6></td>
-                <td><h6><a href="#" class="a3-29">29</a></h6></td>
-                <td><h6>30</h6></td>
-                <td><h6>31</h6></td>
-                <td><h6></h6></td>
-                <td><h6></h6></td>
+
+              <tr class="dno">
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>27</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>28</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>29</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td class="day">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>30</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td>
+                  <div class="box7-cale none">
+                    <hr style="border: 1px solid #000;">
+                    <h2>01</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td>
+                  <div class="box7-cale none">
+                    <hr style="border: 1px solid #000;">
+                    <h2>02</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
+                <td>
+                  <div class="box7-cale none">
+                    <hr style="border: 1px solid #000;">
+                    <h2>03</h2>
+                    <h6>暫無活動</h6>
+                    <p></p>
+                  </div>
+                </td>
               </tr>
-              <h4 style="text-align: center;">2023 / 3月</h4>
+
+              <tr>
+                <td class="bg maxw">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>01</h2>
+                    <div class="date">
+                      <h6>開幕典禮</h6>
+                      <h6><i class="fa-solid fa-clock mr-2"></i>18:00 - 20:00</h6>
+                      <p>歡迎詞和<br>浪人季活動介紹。</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="bg maxw">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>06</h2>
+                    <div class="date">
+                      <h6>國際美食展</h6>
+                      <h6><i class="fa-solid fa-clock mr-2"></i>14:00 - 21:00</h6>
+                      <p>提供各國特色美食品嚐。</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="bg maxw">
+                  <div class="box7-cale">
+                    <hr style="border: 1px solid #000;">
+                    <h2>10</h2>
+                    <div class="date">
+                      <h6>跨學校合作日</h6>
+                      <h6><i class="fa-solid fa-clock mr-2"></i>整天</h6>
+                      <p>與其他學校進行合作，共同探討教學方法和課程設計。</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
             </table>
           </div>
-
-          <div class="box7-box-b">
-            <div class="box7-b3 b3-1">
-              <div>
-                <h2 class="box7-b-h2">東花浪人季世界開幕週</h2>
-                <h6 class="box7-b-h6"><i class="fa-solid fa-clock mr-2"></i>15:00 - 17:00</h6>
-                <p class="box7-b-p">歡迎詞和浪人季活動介紹。</p>
-              </div>
-            </div>
-
-            <div class="box7-b3 b3-12">
-              <div>
-                <h2 class="box7-b-h2">國際教育論壇</h2>
-                <h6 class="box7-b-h6"><i class="fa-solid fa-clock mr-2"></i>10:00 - 12:00</h6>
-                <p class="box7-b-p">
-                  與姐妹校代表及教育專業人
-                  士進行深入的教育交流和合
-                  作討論
-                </p>
-              </div>
-            </div>
-
-            <div class="box7-b3 b3-16">
-              <div>
-                <h2 class="box7-b-h2">跨校教學示範</h2>
-                <h6 class="box7-b-h6"><i class="fa-solid fa-clock mr-2"></i>10:00 - 12:00</h6>
-                <p class="box7-b-p">
-                  姐妹校教師進行實地教學示
-                  範，展示各校不同的教學風
-                  格和方法。
-                </p>
-              </div>
-            </div>
-
-            <div class="box7-b3 b3-29">
-              <div>
-                <h2 class="box7-b-h2">閉幕典禮暨藝術成果展開幕</h2>
-                <h6 class="box7-b-h6"><i class="fa-solid fa-clock mr-2"></i>15:00 - 17:00</h6>
-                <p class="box7-b-p">
-                  學校主禮堂閉幕典禮，宣布活動結束，同時開幕藝術成果展覽。
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
+    </div>
 
-      <!-- end -->
+<!-- end -->
 
+    <div id="art" class="boxs8">
       <div class="box8-title">
         <div class="box8-title-in">
           <h6 class="box8-title-h6">art</h6>
@@ -386,7 +636,7 @@
         </div>
       </div>
 
-      <div class="box8" id="art">
+      <div class="box8">
         <div class="box8-boxs row-1">
           <div class="art">
             <div class="art-img">
@@ -395,8 +645,9 @@
 
             <div class="art-text">
               <h2 class="art-h2">作品-1</h2>
-              <a href="#" class="art-a"><i class="fa-solid fa-thumbs-up mr-2"></i>為他點讚</a>
-            </div>
+              <h6><i class="fa-solid fa-thumbs-up mr-2"></i><span id="like-count-1">0</span></h6>
+              <a href="#" class="art-a" data-id="1"><i class="fa-solid fa-thumbs-up mr-2"></i>為他點讚</a>
+          </div>
           </div>
 
           <div class="art">
@@ -406,8 +657,9 @@
 
             <div class="art-text">
               <h2 class="art-h2">作品-2</h2>
-              <a href="#" class="art-a"><i class="fa-solid fa-thumbs-up mr-2"></i>為他點讚</a>
-            </div>
+              <h6><i class="fa-solid fa-thumbs-up mr-2"></i><span id="like-count-2">0</span></h6>
+              <a href="#" class="art-a" data-id="2"><i class="fa-solid fa-thumbs-up mr-2"></i>為他點讚</a>
+          </div>
           </div>
 
           <div class="art">
@@ -415,10 +667,11 @@
               <img src="images/F 參賽畫作圖片/Student_Works4.jpg" alt="" style="width: 100%;">
             </div>
 
-            <div class="art-text">
-              <h2 class="art-h2">作品-3</h2>
-              <a href="#" class="art-a"><i class="fa-solid fa-thumbs-up mr-2"></i>為他點讚</a>
-            </div>
+              <div class="art-text">
+                  <h2 class="art-h2">作品-3</h2>
+                  <h6><i class="fa-solid fa-thumbs-up mr-2"></i><span id="like-count-3">0</span></h6>
+                  <a href="#" class="art-a" data-id="3"><i class="fa-solid fa-thumbs-up mr-2"></i>為他點讚</a>
+              </div>
           </div>
         </div>
       </div>
