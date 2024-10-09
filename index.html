@@ -4,708 +4,270 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
 
-  <!-- <div class="open">
-    <div class="open-box">
-      <i class="fa-brands fa-artstation open-box-i"></i>
-      <h2 class="open-box-h2">藝起<span style="color: #00dbff;">浪人祭</h2>
-      <p class="open-box-p">
-        歡迎來到<span style="color: #8683ff;">東花</span>浪人祭
-      </p>
-    </div>
-  </div> -->
-
-  
-  <div class="login modal fade" id="mymodal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body login-box" id="login">
-          <div>
-            <h2 class="login-h2"><span style="color: #8683ff;">東花</span>浪人祭</h2>
-            <h6 class="login-h6">會員登入</h6>
-            <input type="email" placeholder="請輸入帳號" class="login-input" id="username"><br>
-            <input type="password" placeholder="請輸入密碼" class="login-input" id="password"><br>
-            <h6 style="opacity: .5;">密碼提示：123</h6>
-            <button type="submit" class="login-but" id="login-btn" onclick="login()">登入</button>
-          </div>
-        </div>
-
-        <div class="modal-body login-box" id="logout">
-          <div>
-            <h2 class="login-h2"><span style="color: #8683ff;">東花</span>浪人祭</h2>
-            <h6 class="login-h6">會員登入</h6>
-            <h2 class="login-h2">已登入</h2>
-            <button type="submit" class="login-but" id="logout-btn" onclick="logout()">登出</button>
-          </div>
-        </div>
-      </div>
+  <div class="fixed-box">
+    <div class="top">
+      <a href="#"><i class="fa-solid fa-caret-up"></i></a>
     </div>
   </div>
-
-
-<!-- end -->
-
-      <nav class="navbar navbar-expand-lg my-nav fixed-top" id="nav">
-        <div class="row-1 w-100">
-          <a class="navbar-brand top" href="#"><img src="images/logo.png" alt="" id="logo"></a>
-        
-          <button class="navbar-toggler nav-but" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars"></i>
+    
+    <!-- <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">可能是個活動吧</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="nav-items">
-              <ul class="navbar-nav">
-                <li class="nav-item my-nav-li">
-                  <a class="nav-link" href="#about"><i class="fa-solid fa-globe mr-2"></i>關於我們</a>
-                </li>
-                <li class="nav-item my-nav-li">
-                  <a class="nav-link" href="#news"><i class="fa-solid fa-newspaper mr-2"></i>最新消息</a>
-                </li>
-                <li class="nav-item my-nav-li">
-                  <a class="nav-link" href="#info"><i class="fa-solid fa-circle-info mr-2"></i>活動資訊</a>
-                </li>
-                <li class="nav-item my-nav-li">
-                  <a class="nav-link" href="#art"><i class="fa-solid fa-palette mr-2"></i>作品展覽</a>
-                </li>
-                <li class="nav-item my-nav-li">
-                  <a class="nav-link" href="#call"><i class="fa-solid fa-comment mr-2"></i>聯絡我們</a>
-                </li>
-              </ul>
-            </div>
-          
-            <div class="nav-ritems ml-auto d-flex align-items-center">
-              <a href="" id="log-in" class="ritem" data-toggle="modal" data-target="#mymodal">
-                <i class="fa-solid fa-user mr-2"></i>
-              </a>
-              <a href="" id="phone" class="ritem">
-                <i class="fa-solid fa-mobile"></i>
-              </a>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">關於我們</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">最新消息</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">活動簡介</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">聯絡我們</a>
+              </li>
+            </ul>
+
+            <div>
+                <a href="#"></a>
             </div>
           </div>
         </div>
-      </nav>
+      </nav> -->
 
-<!-- end -->
-
-      <div class="box2">
-        <div class="box2-box">
-          <div style="position: absolute; z-index: 2;" class="title">
-            <div class="title-box">
-              <h2 class="title-h2">藝起<span style="color: #00dbff;">浪人祭</span></h2>
-              <p class="title-p">
-                透過<span style="color: #ff4e45;">國際浪人交流計畫</span>將學校的教育理念與台灣文化瑰寶融入國際交流的大舞台中。期望藉由學生的國際交流，將學校凝聚的<span style="color: #ff4e45;">智慧</span>和<span style="color: #ff4e45;">藝術</span>光輝發揚光大。
-              </p>
-              <a href="#about" class="title-a">進入網站<i class="fa-solid fa-circle-down ml-2"></i></a>
+      <header data-bs-theme="dark" class="fixed-top">
+        <div class="collapse my-nav-open" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="dark">可能是某個活動吧?</h4>
+                <p class="dark">
+                    這裡是內容這裡是內容，這裡是內容
+                    這裡是內容這裡是內容這裡是內容，
+                    這裡是內容，<br>這裡是內容這裡是內容這裡是內容這裡是內容。
+                </p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4></h4>
+                <ul class="list-unstyled">
+                  <li class="nav-li"><a href="#" class="nav-a dark">關於我們</a></li>
+                  <li class="nav-li"><a href="#box3" class="nav-a dark">常見詐騙手法</a></li>
+                  <li class="nav-li"><a href="#box4" class="nav-a dark">警政統計通報</a></li>
+                  <li class="nav-li"><a href="#" class="nav-a dark">聯絡我們</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="images/slide-1.png" alt="First slide">
-                <div class="carousel-caption d-md-block">
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images/slide-2.png" alt="Second slide">
-                <div class="carousel-caption d-md-block">
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images/slide-3.png" alt="Third slide">
-                <div class="carousel-caption d-md-block">
-                </div>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+        </div>
+        <div class="navbar shadow-sm my-nav">
+          <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <strong class="dark">可能是某個活動吧?</strong>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="dark"><i class="fa-solid fa-plus"></i></span>
+            </button>
           </div>
         </div>
-      </div>    
-
-<!-- end -->
-
-      <div class="box3" id="about">
-        <div class="box3-box">
-          <h6 class="box3-h6 box3-title">東花<span style="color: #8683ff;">浪人祭</span></h6>
-          <h2 class="box3-h2 box3-title"><span style="color: #8683ff;">關於</span>我們</h2>
-          <p class="box3-p1 box3-text">
-            我們著眼於立足臺灣，提升國際競爭力<br>
-            透過國際學術研究與資源整合<br>
-            讓臺灣的藝術教育<br>
-            在國際間占有一席之地<br>
-          </p>
-          <br>
-          <p class="box3-p2 box3-text">
-            這是一個與世界趨勢同步的計畫<br>
-            我們關注藝術、文創產業的發展趨勢<br>
-            並整合科技資源<br>
-            推動藝術和科技的跨界結合<br>
-            培養學生具備前瞻性思維<br>
-          </p>
-        </div>
-      </div>
-
-<!-- end -->
-
-
-      <div class="box4 row-1">
-        <div class="box4-1 box4-box">
-          <p>
-            <span>31</span>種<br>
-            精彩活動
-          </p>
-        </div>
-        <div class="box4-2 box4-box">
-          <p>
-            <span>12</span>種<br>
-            攤位展覽
-          </p>
-        </div>
-        <div class="box4-3 box4-box">
-          <p>
-            <span>2</span>位<br>
-            知名顧問
-          </p>
-        </div>
-        <div class="box4-4 box4-box">
-          <p>
-            <span>4</span>周<br>
-            充實體驗
-          </p>
-        </div>
-      </div>
-
-<!-- end -->
-
-      <div class="box5" id="news">
-        <div class="box5-title">
-          <div class="box5-title-in">
-            <h6 class="box5-title-h6">News</h6>
-            <h2 class="box5-title-h2"><span style="color: #ff4e45;">東花</span>快報!!</h2>
-          </div>
-        </div>
-
-        <img src="images/up-red.png" alt="" class="box5-up-red">
-
-        <div class="box5-news row-1">
-          <div class="box5-new news-1">
-            <div class="box5-news-img news1-img"></div>
-            <div class="box5-news-text news1-text">
-              <h2 class="news-h2">校慶倒數開始！</h2>
-              <h6 class="news-h6"><i class="fa-solid fa-star mr-2"></i>活動提醒</h6>
-              <p class="news-p">
-                踏入浪人季前，距離盛典只剩下 8 天！準備迎接 3 月起一場充滿藝術與文化的盛會！
-              </p>
-            </div>
-            <div class="box5-news-but">
-              <a href="#" class="copylink" data-link="https://jfzok.github.io/test2/">分享資訊<i class="fa-solid fa-share ml-2"></i></a>
-            </div>
-          </div>
-
-          <div class="box5-new news-2">
-            <div class="box5-news-img news2-img"></div>
-            <div class="box5-news-text news2-text">
-              <h2 class="news-h2">國際交流預告</h2>
-              <h6 class="news-h6"><i class="fa-solid fa-newspaper mr-2"></i>活動消息</h6>
-              <p class="news-p">
-                3 月 3 日將迎來來自巴黎藝術學院的代表，與我們練習生分享藝術視野。
-              </p>
-            </div>
-            <div class="box5-news-but">
-              <a href="#" class="copylink" data-link="https://jfzok.github.io/test2/">分享資訊<i class="fa-solid fa-share ml-2"></i></a>
-            </div>
-          </div>
-
-          <div class="box5-new news-3">
-            <div class="box5-news-img news3-img"></div>
-            <div class="box5-news-text news3-text">
-              <h2 class="news-h2">主題展覽倒數</h2>
-              <h6 class="news-h6"><i class="fa-solid fa-newspaper mr-2"></i>提醒大家</h6>
-              <p class="news-p">
-                藝術展覽倒數計時中，3 月 28 日即將展出的主題作品，提前感受藝術的饗宴。
-              </p>
-            </div>
-            <div class="box5-news-but">
-              <a href="#" class="copylink" data-link="https://jfzok.github.io/test2/">分享資訊<i class="fa-solid fa-share ml-2"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-<!-- end -->
-    <div id="info">
-      <div class="info-title">
-        <div class="info-title-in">
-          <h6 class="info-title-h6">Info</h6>
-          <h2 class="info-title-h2"><span style="color: #35C6F9;">活動</span>資訊</h2>
-        </div>
-      </div>
-
-      <div style="background: #5cc5ff; padding: 100px 0;">
-        <div class="box7-title">
-          <div class="box7-title-in">
-            <h6 class="box7-title-h6">calendar</h6>
-            <h2 class="box7-title-h2">活動日歷</h2>
-          </div>
-        </div>
-
-
-        <div class="box7">
-          <div class="box7-boxs">
-            <table>
-              <tr class="dno">
-                <td class="box7-day"><h6>Mon</h6></td>
-                <td class="box7-day"><h6>Tus</h6></td>
-                <td class="box7-day"><h6>Wed</h6></td>
-                <td class="box7-day"><h6>Thu</h6></td>
-                <td class="box7-day"><h6>Fri</h6></td>
-                <td class="box7-day"><h6>Sat</h6></td>
-                <td class="box7-day"><h6>Sun</h6></td>
-              </tr>
-              <tr class="dno">
-                <td>
-                  <div class="box7-cale none">
-                    <hr style="border: 1px solid #000;">
-                    <h2>30</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td>
-                  <div class="box7-cale none">
-                    <hr style="border: 1px solid #000;">
-                    <h2>31</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="bg">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>01</h2>
-                    <div class="date">
-                      <h6>開幕典禮</h6>
-                      <h6><i class="fa-solid fa-clock mr-2"></i>18:00 - 20:00</h6>
-                      <p>歡迎詞和<br>浪人季活動介紹。</p>
-                    </div>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>02</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>03</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>04</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>05</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="dno">
-                <td class="bg">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>06</h2>
-                    <div class="date">
-                      <h6>國際美食展</h6>
-                      <h6><i class="fa-solid fa-clock mr-2"></i>14:00 - 21:00</h6>
-                      <p>提供各國特色美食品嚐。</p>
-                    </div>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>07</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>08</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>09</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="bg">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>10</h2>
-                    <div class="date">
-                      <h6>跨學校合作日</h6>
-                      <h6><i class="fa-solid fa-clock mr-2"></i>整天</h6>
-                      <p>與其他學校進行合作，共同探討教學方法和課程設計。</p>
-                    </div>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>11</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>12</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="dno">
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>13</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>14</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>15</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>16</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>17</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>18</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>19</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="dno">
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>20</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>21</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>22</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>23</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>24</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>25</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>26</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="dno">
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>27</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>28</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>29</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td class="day">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>30</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td>
-                  <div class="box7-cale none">
-                    <hr style="border: 1px solid #000;">
-                    <h2>01</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td>
-                  <div class="box7-cale none">
-                    <hr style="border: 1px solid #000;">
-                    <h2>02</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-                <td>
-                  <div class="box7-cale none">
-                    <hr style="border: 1px solid #000;">
-                    <h2>03</h2>
-                    <h6>暫無活動</h6>
-                    <p></p>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="bg maxw">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>01</h2>
-                    <div class="date">
-                      <h6>開幕典禮</h6>
-                      <h6><i class="fa-solid fa-clock mr-2"></i>18:00 - 20:00</h6>
-                      <p>歡迎詞和<br>浪人季活動介紹。</p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="bg maxw">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>06</h2>
-                    <div class="date">
-                      <h6>國際美食展</h6>
-                      <h6><i class="fa-solid fa-clock mr-2"></i>14:00 - 21:00</h6>
-                      <p>提供各國特色美食品嚐。</p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="bg maxw">
-                  <div class="box7-cale">
-                    <hr style="border: 1px solid #000;">
-                    <h2>10</h2>
-                    <div class="date">
-                      <h6>跨學校合作日</h6>
-                      <h6><i class="fa-solid fa-clock mr-2"></i>整天</h6>
-                      <p>與其他學校進行合作，共同探討教學方法和課程設計。</p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<!-- end -->
-
-    <div id="art" class="boxs8">
-      <div class="box8-title">
-        <div class="box8-title-in">
-          <h6 class="box8-title-h6">art</h6>
-          <h2 class="box8-title-h2">作品展覽</h2>
-        </div>
-      </div>
-
-      <div class="box8">
-        <div class="box8-boxs row-1">
-          <div class="art">
-            <div class="art-img">
-              <img src="images/F 參賽畫作圖片/Student_Works2.jpg" alt="" style="width: 100%;">
-            </div>
-
-            <div class="art-text">
-              <h2 class="art-h2">作品-1</h2>
-              <h6><i class="fa-solid fa-thumbs-up mr-2"></i><span id="like-count-1">0</span></h6>
-              <a href="#" class="art-a" data-id="1"><i class="fa-solid fa-thumbs-up mr-2"></i>為他點讚</a>
-          </div>
-          </div>
-
-          <div class="art">
-            <div class="art-img">
-              <img src="images/F 參賽畫作圖片/Student_Works3.jpg" alt="" style="width: 100%;">
-            </div>
-
-            <div class="art-text">
-              <h2 class="art-h2">作品-2</h2>
-              <h6><i class="fa-solid fa-thumbs-up mr-2"></i><span id="like-count-2">0</span></h6>
-              <a href="#" class="art-a" data-id="2"><i class="fa-solid fa-thumbs-up mr-2"></i>為他點讚</a>
-          </div>
-          </div>
-
-          <div class="art">
-            <div class="art-img">
-              <img src="images/F 參賽畫作圖片/Student_Works4.jpg" alt="" style="width: 100%;">
-            </div>
-
-              <div class="art-text">
-                  <h2 class="art-h2">作品-3</h2>
-                  <h6><i class="fa-solid fa-thumbs-up mr-2"></i><span id="like-count-3">0</span></h6>
-                  <a href="#" class="art-a" data-id="3"><i class="fa-solid fa-thumbs-up mr-2"></i>為他點讚</a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      </header>
 
       <!-- end -->
 
-    <div class="box9" id="call">
-      <div class="box9-box">
+      <div class="box2" style="">
+        <div class="box2-text" id="sticky">
+            <div class="box2-title">
+              <h2 class="box2-h2">詐騙無處不在?!</h2>
+              <img src="images/ff.png" alt="" style="position: absolute; left: 30%;">
+            </div>
+            <!-- <h6 class="box2-h6">騙術的多樣化讓人防不慎防</h6> -->
+            <p class="box2-p">
+              騙術的多樣化讓人防不慎防，該如何識別詐騙？帶你看看近期的案例，教你如何分辨真假消息，避免成為下個受害者
+            </p>
+
+        </div>
+      </div>
+
+      <!-- end -->
+
+      <div class="box3" id="box3">
         <div>
-          <h2 class="box9-h2">遇到問題?</h2>
-          <input type="text" placeholder="描述您遇到的問題，我們會盡快回復您" class="box9-input">
-          <button class="box9-but">送出</button>
+          <div class="title">
+            <h2>常見的詐騙手法</h2>
+            <h6>小心上當受騙</h6>
+          </div>
+
+          <div class="row-1 box3-top">
+            <div>
+              <img src="images/a1.png" alt="" class="box3-img">
+              <div style="width: 300px;">
+                <h2>網路詐欺</h2>
+                <p>
+                  犯罪者利⽤電話連繫被害⼈，謊稱被害⼈已中⼤獎或用恐嚇等⽅式詐騙被害⼈，讓被害⼈在無法辨識真假之情形下交出財物給犯罪者。
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <img src="images/a2.png" alt="" class="box3-img">
+
+              <div style="width: 300px;">
+                <h2>投資詐欺</h2>
+                <p>
+                  犯罪者利⽤⺠眾想藉由投資股票或基⾦等⽅式快速獲利並致富的⼼理巧妙設計出⼀連串投資上的騙局。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row-1 box3-bottom">
+            <div>
+              <img src="images/a3.png" alt="" class="box3-img">
+              <div style="width: 300px;">
+                <h2>電話詐欺</h2>
+                <p>
+                  犯罪者亦會向被害⼈謊稱當事⼈帳⼾設定錯誤遭⼈利⽤等說法，要求被害⼈去ATM解除分期付款，因⽽詐騙被害⼈錢財等⽅法皆是。
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-<!-- end -->
+      <!-- end -->
 
-    <footer>
+      <div class="box4" id="box4">
+        <div class="box4-all">
+          <div class="big-title">
+            <h2>警政統計通報</h2>
+            <h6>警政署刑事檢查局提供最新資料</h6>
+          </div>
+
+          <div class="box4-boxs">
+            <table class="box4-table hide">
+              <tr>
+                <td class="year td-title">年份</td>
+                <td class="ok td-title">案件數量（件）</td>
+                <td class="money td-title">攔阻金額（億元）</td>
+              </tr>
+
+              <tr>
+                <td class="year">2017</td>
+                <td class="ok">1,500</td>
+                <td class="money">10.5</td>
+              </tr>
+
+              <tr>
+                <td class="year">2018</td>
+                <td class="ok">1,800</td>
+                <td class="money">12.3</td>
+              </tr>
+
+              <tr>
+                <td class="year">2019</td>
+                <td class="ok">2,000	</td>
+                <td class="money">8.7</td>
+              </tr>
+
+              <tr>
+                <td class="year">2020</td>
+                <td class="ok">2,500</td>
+                <td class="money">5.6</td>
+              </tr>
+
+              <tr>
+                <td class="year">2021</td>
+                <td class="ok">2,291</td>
+                <td class="money">5.03</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- end -->
+
       <div>
-        <div class="footer-text row-1">
-          <h6>電話：0800-514-914 有藝術，有意思！</h6>
-          <h6>電子郵件：service@mbae.edu.tw</h6>
-          <h6>地址:嘉義市東區中山路七號</h6>
-        </div>
-      
-        <p>2023 © 聽說東花浪人季，使用CSS、jQuery製作，兼具RWD響應式及AJAX設計</p>
-      </div>
-    </footer>
+        <div>
+          <div class="title">
+            <h2>如何避免受騙</h2>
+            <h6>小心上當受騙</h6>
+          </div>
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap-4.4.1.js"></script>
-<script src="js/test.js"></script>
+          <div>
+            <a href="#" class="box5-a1"><h2>假冒機構公務員或警察機構詐財⼿法及預防策略</h2></a>
+
+            <div class="box5-b1">
+              <table>
+                <tr>
+                  <td>
+                    <h6>
+                      法院或警察機關辦案，不會收取當事⼈現⾦、亦不會要求匯款；法院或警察機關不會監管
+                      當事⼈帳⼾；法院不會⽤傳真⽅式，將傳喚書送給當事⼈，⼀定會以掛號信函送達；公家
+                      機關絕對不會以電話、電話錄音或以簡訊通知⽤⼾轉帳，或要打電話與某單位聯繫。
+                    </h6>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <h6>
+                      國稅局正確退稅⽅法會以當事⼈申報時所填寫之⾦融帳號匯入或以退稅⽀票掛號郵寄⾄
+                      第 6 頁 / 共 6 頁 《網頁設計》
+                      申報退稅之住址，即便退稅⽀票掛號信無⼈收件，郵局也會張貼郵件招領通知，最後才會
+                      退回國稅局，絕無所謂持提款卡⾄提款機辦理退稅之⽅法。
+                    </h6>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <h6>
+
+                    </h6>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <h2></h2>
+          </div>
+
+          <img src="images/world.png" alt="" style="width: 100%;">
+        </div>
+      </div>
+
+      <!-- end -->
+
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">關於我們</a></li>
+          <li class="nav-item"><a href="#box3" class="nav-link px-2 text-body-secondary">常見詐騙手法</a></li>
+          <li class="nav-item"><a href="#box4" class="nav-link px-2 text-body-secondary">警政統計通報</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">聯絡我們</a></li>
+          <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li> -->
+        </ul>
+        <p class="text-center text-body-secondary">&copy; 2024 Company, Inc</p>
+      </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/js.js"></script>
 </body>
 </html>
